@@ -32,7 +32,6 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -72,7 +71,7 @@
             {% for job in jobs.all %}
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" src="{{ job.image.url }}" />
+                        <img class="bd-placeholder-img card-img-top" src="{{ job.image.url }}" height=200 width=150></img>
                         <div class="card-body">
                             <p class="card-text">{{ job.summary }}</p>
                         </div>
